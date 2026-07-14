@@ -5,10 +5,12 @@ streamlit>=1.35.0
 
 # ---------------------------------------------------------------------
 # LLM orchestration (prompting, output parsing, HF integration)
+# Pinned (not >=) to avoid breaking changes from langchain's v1.x
+# restructuring, which removed/relocated several import paths.
 # ---------------------------------------------------------------------
-langchain>=0.2.0
-langchain-core>=0.2.0
-langchain-huggingface>=0.0.3
+langchain==0.3.27
+langchain-core==0.3.79
+langchain-huggingface==0.1.2
 
 # ---------------------------------------------------------------------
 # Model loading / inference

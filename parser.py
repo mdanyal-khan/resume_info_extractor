@@ -21,7 +21,7 @@ import logging
 import re
 from typing import Optional
 
-from langchain.output_parsers import PydanticOutputParser
+from langchain_core.output_parsers import PydanticOutputParser
 from langchain_core.prompts import PromptTemplate
 from pydantic import ValidationError
 
